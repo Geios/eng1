@@ -1,3 +1,7 @@
+Rogerio Serraglio
+Engenharia de software 1
+Prof Radames Pereira
+
 A crise do software, que ocorreu entre os anos 1960 e 1980, caracterizou-se pela incapacidade da indústria de produzir consistentemente software de alta qualidade em tempo hábil. A falta de padronização do processo de desenvolvimento de software, os altos custos de desenvolvimento e a falta de ferramentas adequadas são os principais fatores que contribuem para essa crise.
 
 Para superar a crise, além de desenvolver ferramentas mais avançadas, foram criados padrões e metodologias de desenvolvimento de software. Estas soluções ajudam a aumentar a eficiência e acessibilidade do desenvolvimento de software, permitindo a criação de soluções técnicas mais complexas e inovadoras.
