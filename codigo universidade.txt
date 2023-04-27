@@ -1,0 +1,108 @@
+@startuml
+
+
+
+left to right direction
+ 
+ package receber{
+receber as re
+
+package funcionario{
+  actor funcionario as c
+  usecase "prestar serviço" as UC1
+  usecase "Atender Universidade" as UC2
+  usecase "Gerenciar receitas e despesas" as UC3 
+  usecase "receber" as RE
+
+
+package financeiro{
+actor financeiro as fi
+
+}
+
+package cordenador{
+actor cordenador as co
+
+usecase "Orientar Matricula" as OM
+usecase " administrar curso" as AC
+}
+
+  package faxineiro{
+actor fachineiro as fa
+
+usecase "limpar o chão" as LC
+usecase "sempre dar bom dia" as BD
+usecase "sempre ser gente boa" as GB
+
+}
+
+  package vigilante{
+actor vigilante as v
+ usecase "cuidar da segurança" as CS1
+
+}
+  
+  package professor{
+actor professor as p
+usecase "ministrar aula" as MA1
+usecase "chingar aluno"  as MA2
+   
+}
+
+package reitor {
+actor reitor as r
+usecase "administrar universidade" as RU1
+usecase "representar universidade" AS RU2
+}
+ }
+ }
+
+ package aluno{
+actor aluno as a
+
+usecase "estudar" as E
+usecase "pagar" as EN
+USECASE "assistir aulas" as BP
+}
+ 
+  usecase "prestar serviço" as UC1
+  usecase "Atender Universidade" as UC2
+  usecase "Gerenciar receitas e despesas" as UC3 
+
+
+co -- OM
+co -- AC
+a -- E 
+a -- EN
+a -- BP
+r -- RU1
+r -- RU2
+p -- MA1
+p -- MA2
+c -- UC1
+c -- UC2
+c -- UC3
+v -- CS1
+fa -- LC
+fa -- BD
+fa -- GB
+
+p <|.. r
+p <|.. co
+
+c .> p
+c .> fa
+c .> v
+c .> r
+c .> co
+
+BP -- MA1
+
+fi <|.. UC3 
+
+ UC3 <|.. EN
+
+ UC3 <|.. p
+ 
+
+@enduml
