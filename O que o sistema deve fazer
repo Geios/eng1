@@ -1,0 +1,5 @@
+quando uma venda estiver em andamento, é necessário registrar todos os itens comprados pelo cliente e calcular o total da venda corrente, levando em consideração impostos e cupons de desconto aplicáveis.
+
+Além disso, ao confirmar a venda, é importante atualizar o estoque, reduzindo a quantidade de produtos vendidos.
+
+Para realizar essas etapas, é recomendado utilizar um sistema de gestão de vendas, que pode automatizar grande parte desse processo, tornando-o mais eficiente e preciso.
